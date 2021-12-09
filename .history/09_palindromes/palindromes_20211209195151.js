@@ -4,7 +4,7 @@ const palindromes = function (str) {
     }
     const str1 = str.toLowerCase();
     const nopunc  = str1.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()@\+\?><\[\]\+]/g, '');
-    const nospac = nopunc.replace(/ /g,'');
+    const nospac = nopunc.replace(/ /g," ");
     arr = nospac.split('');
     let char1 = '';
     let char2 = '';

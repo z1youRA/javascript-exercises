@@ -2,9 +2,9 @@ const palindromes = function (str) {
     if(typeof str !== `string`) {
         return `ERROR`;
     }
-    const str1 = str.toLowerCase();
+    const str1 = toLowerCase(str1);
     const nopunc  = str1.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()@\+\?><\[\]\+]/g, '');
-    const nospac = nopunc.replace(/ /g,'');
+    const nospac = nopunc.replace(/\s{2,}/g," ");
     arr = nospac.split('');
     let char1 = '';
     let char2 = '';
